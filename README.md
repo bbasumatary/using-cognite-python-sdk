@@ -10,10 +10,10 @@ https://cognite-docs.readthedocs-hosted.com/projects/cognite-sdk-python/en/lates
 git clone https://github.com/cognitedata/using-cognite-python-sdk.git
 ```
 
-2. Install the required packages by opening up the terminal on your machine and running the following command 
+2. Install the required packages by opening up the terminal on your machine and running the following command
 
 ```
-pip install cognite-sdk msal pandas
+pip install "cognite-sdk[pandas]"
 ```
 
 For more advanced users, you can also use [poetry](https://python-poetry.org/) to manage your Python virtual environment. If you would like to use this tool, please follow the steps detailed in the next section.
@@ -35,8 +35,4 @@ Now you're ready to run the code in jupyter notebooks. ( Note : Change the "Kern
 3. Add new libraries as needed
 ```
 poetry add pandas numpy
-```
-or if only required for development
-```
-poetry add --dev pandas
 ```

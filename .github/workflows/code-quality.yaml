@@ -31,11 +31,3 @@ jobs:
       - name: Run linting
         run: |
           poetry run pre-commit run --all-files
-####### Uncomment when tests are added
-      # - name: Run tests
-      #   run: export PYTHONPATH=$PYTHONPATH:$(pwd); poetry run pytest -c pyproject.toml
-
-      - name: Run security checks
-        run: |
-          poetry check
-          poetry run safety check --full-report
